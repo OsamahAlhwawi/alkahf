@@ -103,6 +103,33 @@
     box-shadow: 0 0 0 1px rgba(122,90,18,0.35);
   }
 
+  .dedication {
+    text-align: center;
+    margin: 0 0 22px;
+    padding: 16px 20px;
+    border: 1px solid rgba(201,162,75,0.35);
+    border-radius: 14px;
+    background: linear-gradient(180deg, rgba(201,162,75,0.10), rgba(19,34,29,0.35));
+  }
+  .dedication .label {
+    color: var(--muted);
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-family: system-ui, sans-serif;
+  }
+  .dedication .name {
+    display: block;
+    margin-top: 6px;
+    color: var(--gold-soft);
+    font-size: clamp(20px, 4.5vw, 27px);
+  }
+  .dedication .dua {
+    display: block;
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: 15px;
+  }
+
   footer {
     text-align: center;
     color: var(--muted);
@@ -115,6 +142,9 @@
   @media (prefers-color-scheme: light) {
     body { background: radial-gradient(1200px 600px at 50% -10%, #e8efe9 0%, #d7e2db 55%) fixed; color: #24302b; }
     .masthead h1 { text-shadow: none; }
+    .dedication { background: linear-gradient(180deg, rgba(201,162,75,0.14), rgba(215,226,219,0.5)); }
+    .dedication .name { color: #8a6a1e; }
+    .dedication .label, .dedication .dua { color: #4a5a52; }
     footer { color: #4a5a52; }
   }
 </style>
@@ -131,6 +161,12 @@
         <span class="chip">الترتيب ١٨</span>
       </div>
     </header>
+
+    <section class="dedication">
+      <span class="label">صَدَقَةٌ جَارِيَةٌ عَنْ رُوحِ</span>
+      <span class="name">فَهْد الخَرْشَاوِي — رَحِمَهُ اللَّه</span>
+      <span class="dua">اللَّهُمَّ ٱجْعَلْ ثَوَابَ تِلَاوَتِهَا فِي مِيزَانِ حَسَنَاتِهِ، وَٱغْفِرْ لَهُ وَٱرْحَمْهُ وَأَسْكِنْهُ فَسِيحَ جَنَّاتِكَ</span>
+    </section>
 
     <div class="bism">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِیمِ</div>
 
